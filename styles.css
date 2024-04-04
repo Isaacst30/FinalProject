@@ -1,0 +1,48 @@
+body {
+    text-align: center;
+    background-color: white;
+}
+
+.linktext{
+    color:black;
+
+} 
+
+.button{
+    color:#0092ff;
+}
+
+.button2 {
+    background-color: #0092ff;
+    color: white;  
+}
+
+
+.nav{
+    background-color: #f2f2f0;
+}
+
+.background1{
+    background-color: bisque;
+}
+
+
+.image{
+    border-radius: 25px;
+    border-color: black;
+    border-style: solid;
+    height: 100%;
+    object-fit: contain; 
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5%;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
