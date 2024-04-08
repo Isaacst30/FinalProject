@@ -8,11 +8,12 @@ body {
 
 } 
 
-.button{
-    color:#0092ff;
+.buttonContainer{
+    text-align: center;
+    position: relative;
 }
 
-.button2 {
+.button {
     background-color: #0092ff;
     color: white;  
 }
@@ -24,6 +25,10 @@ body {
 
 .background1{
     background-color: bisque;
+}
+
+.background2{
+    background-color: #f2f2f0;   
 }
 
 
@@ -45,4 +50,37 @@ body {
     content: "";
     clear: both;
     display: table;
+  }
+  
+.fa {
+    padding: 20px;
+    font-size: 50px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 1;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  /* Instagram */
+  .fa-instagram{
+    background: rgb(244, 73, 101);
+    color: rgb(235, 235, 242);
   }
