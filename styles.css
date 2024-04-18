@@ -54,6 +54,10 @@ body {
   clear: both;
   display: table;
 }
+
+.hide {
+  visibility: hidden;
+}
   
 .fa {
     padding: 15px;

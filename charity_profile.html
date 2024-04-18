@@ -9,6 +9,8 @@
     <link href="./styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="util.js"></script>
+    <script src="charity_profile.js"></script>
+
 
     <head>
         <title>Help Hub</title>
@@ -56,9 +58,32 @@
             </div>
             <p>&nbsp;</p>
               <div class="d-grid gap-2 d-md-flex justify-content-center">
-              <button class="btn btn-primary me-md-2" type="button">Volenteer for Charities Now!</button>
+              <button id="volunteer-btn" class="btn btn-primary me-md-2" type="button">Volenteer for Charities Now!</button>
               </div>
             <p>&nbsp;</p>
+
+            <div class="row hide" id="form-row">
+              <div class="col-3"></div>
+              <div class="col-6">
+                <form id="contact-form">
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPhone" placeholder="#1-234-5678">
+                    <label for="floatingPhone">Phone Number</label>
+                  </div>
+                
+                  <button type="submit" class="btn btn-primary me-md-2">Submit</button>
+                </form>
+              </div>
+              <div class="col-3"></div>
+            </div>
 
             <h1>Charity Info:</h1>
             <p>Charity Address:<br> <span id="address"></span></p>
@@ -85,21 +110,8 @@
 
 
         <script>
-          // Parse the URL
-          const url = new URL(window.location.href);
-    
-          // Get a specific parameter by name
-          const id = url.searchParams.get('id');
-    
-          const charity = charities[id];
-          document.getElementById('title').innerHTML = charity.name
-          document.getElementById('address').innerHTML = charity.contact_information.address
-          document.getElementById('phone').innerHTML = charity.contact_information.phone
-          document.getElementById('email').innerHTML = charity.contact_information.email
-          document.getElementById('description').innerHTML = charity.description
-          document.getElementById('mission').innerHTML = charity.mission
-          document.getElementById('impact').innerHTML = charity.impact
-          document.getElementById('opportunities').innerHTML = charity.opportunities_to_get_involved
+         window.onload = loadCharity()
+         window.onload = addEvent()
         </script>
     
 
