@@ -46,24 +46,28 @@ body {
     padding: 5%;
   }
   
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+.row {
+  padding: 2%;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
   
 .fa {
-    padding: 20px;
+    padding: 15px;
     font-size: 50px;
-    width: 100px;
+    width: 75px;
     text-align: center;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 35px;
+
   }
   
   /* Add a hover effect if you want */
   .fa:hover {
-    opacity: 1;
+    transform: scale(.9);
   }
   
   /* Set a specific color for each brand */
